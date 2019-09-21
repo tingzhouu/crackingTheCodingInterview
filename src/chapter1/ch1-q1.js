@@ -16,6 +16,6 @@ export function hasUniqueCharactersSet(str) {
       return false;
     }
     chars.add(str[i]);
-    return true;
   }
+  return true;
 }

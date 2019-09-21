@@ -11,4 +11,12 @@ for (let key in funcs) {
       });
     });
   });
+
+  describe('ch1-q1: ' + key, () => {
+    ['aaaaaa', 'bbbbb', 'ccccc'].forEach(arg => {
+      it(`returns false for non unique string: '${arg}'`, () => {
+        expect(func(arg.split(''))).to.be.false;
+      });
+    });
+  });
 }
