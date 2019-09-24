@@ -13,5 +13,15 @@ for (let functionWrittenKey in functionsWritten) {
         expect(functionWritten(str1.split(''), str2.split(''))).to.be.true;
       });
     });
+
+    [
+      { str1: 'asdasd', str2: 'asdasf'},
+      { str1: '12345', str2: '99213' },
+    ].forEach(testItem => {
+      const { str1, str2 } = testItem;
+      it(`the 2 strings are not permutations of one another: string 1: ${str1}; string 2: ${str2}`, () => {
+        expect(functionWritten(str1.split(''), str2.split(''))).to.be.false;
+      });
+    });
   });
 }

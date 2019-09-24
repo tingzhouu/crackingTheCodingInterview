@@ -1,3 +1,4 @@
+// TODO: ADD TIME AND SPACE COMPLEXITY
 export function isPalindromePermutation(str) {
   if (str.length <= 1) {
     return true;
@@ -45,6 +46,7 @@ export function isPalindromePermutation(str) {
   }
 }
 
+// TODO: ADD TIME AND SPACE COMPLEXITY
 export function isPalindromePermutationSet(str) {
   let chars = new Set();
   str.forEach((char) => {
