@@ -8,6 +8,7 @@ export function URLify(str) {
   let output = '';
   let pointerIndex = 0;
 
+  // REVIEW - TRY WRITING THIS IN FOR LOOP
   while (str[pointerIndex] === ' ' && pointerIndex < str.length) {
     pointerIndex += 1;
   }

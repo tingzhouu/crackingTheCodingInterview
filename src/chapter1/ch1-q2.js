@@ -6,6 +6,8 @@ export function isPermutationOfOther(str1, str2) {
   }
   str1.sort();
   str2.sort();
+
+  // instead of such a long for loop, use the 'every' method for javascript arrays.
   for (let i = 0; i < str1.length; i++) {
     if (str1[i] !== str2[i]) {
       return false;

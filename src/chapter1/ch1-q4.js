@@ -3,10 +3,13 @@ export function isPalindromePermutation(str) {
     return true;
   }
 
+  // REVIEW: A PALINDROME CANNOT HAVE MORE THAN 1 CHARACTER WITH ODD NUMBER OF OCCURRENCES
+  // THEREFORE NO NEED TO CHECK FOR SO MANY THINGS 
   let charWithMoreThanTwoAndOddNumberOccurrence = 0;
   let charWithOneOccurrence = 0;
   let lengthWithoutSpaces = 0;
 
+  // REVIEW: CAN USE JAVASCRIPT MAP, OR USE SET SOLUTION BELOW INSTEAD
   let charMap = {};
   str.forEach(char => {
     if (char !== ' ') {
