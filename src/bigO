@@ -1,0 +1,53 @@
+big O additional problems - page 55
+q1
+product(a, b) {
+  let sum = 0;
+  for (let i = 0; i < b; i++) {
+    sum += a;
+  }
+  return sum;
+}
+runtime - O(b).
+reason - number of repeats in for loop = length of b.
+
+q2
+power(a, b) {
+  if (b < 0) {
+    return 0;
+  } else if (b === 0) {
+    return 1;
+  } else {
+    return a * power(a, b - 1)
+  }
+}
+runtime - O(b).
+reason - number of repeats for calling power(a,b) = length of b.
+
+q3
+mod(a, b) {
+  if (b <= 0) {
+    return -1;
+  }
+  let div = Math.floor(a / b);
+  return a - div * b
+}
+runtime - O(1).
+reason - function only runs once, regardless of value in a or b.
+
+q4
+div(a, b) {
+  let count = 0;
+  let sum = b;
+  while (sum <= a) {
+    sum += b;
+    count += 1;
+  }
+  return count;
+}
+runtime - O(a / b).
+reason - function runs as many times as the result of a / b.
+for example, if a = 10, b = 1, function repeats 10 times.
+for example, if a = 10, b = 2, function repeats 5 times.
+for example, if a = 10, b = 3, function repeats 3 times.
+
+q5
