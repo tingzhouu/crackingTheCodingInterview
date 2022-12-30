@@ -17,7 +17,7 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "chai": "^4.2.0",
     "eslint": "^6.4.0",
-    "mocha": "^6.2.0",
+    "mocha": "^10.2.0",
     "mocha-eslint": "^5.0.0"
   }
 }
